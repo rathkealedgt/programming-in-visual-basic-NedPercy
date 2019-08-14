@@ -1,29 +1,23 @@
-﻿Module Module1
-    ''' <summary>
-    '''     This program will show you how to get input from the user.
-    ''' </summary>
-    ''' <author> Mr Macri </author>
-    ''' <date> 10Jun19 </date>
-    ''' 
-    Sub Main()
-        ' Housekeeping
+﻿Public Class Form1
+
+    Sub main()
+        Dim UserName, OutputMessage As String
+        Dim FirstNumber, SecondNumber, Sum, Product As Integer
+        Console.WriteLine("Please enter you name")
+        UserName = Console.ReadLine()
+
+        Console.WriteLine("Please enter your favourite number")
+        FirstNumber = Console.ReadLine()
+
+        Console.WriteLine("Please enter your second favourite number")
+        SecondNumber = Console.ReadLine()
 
 
-        ' Ask for user name
-
-
-        ' Ask user for two numbers
-
-
-        ' Add numbers together
-
-
-        ' Multiply numbers together
-
-
-        ' Greet user and display maths
-
+        OutputMessage = String.Format("Hello(0)", UserName)
+        Console.WriteLine(OutputMessage)
+        Console.ReadLine()
 
     End Sub
 
-End Module
+End Class
+
